@@ -1,8 +1,4 @@
-/* ============================================================
-   FlowSpherePro design system
-   Plain CSS, no framework. Variables at the top control the
-   whole look - change a value here and it updates everywhere.
-   ============================================================ */
+
 
 :root {
     --color-primary: #2563eb;
