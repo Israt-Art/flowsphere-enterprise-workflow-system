@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FlowSpherePro - Employee Dashboard</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="app-layout">
+
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-brand">
+                <div class="logo-mark">FSP</div>
+                <span>FlowSpherePro</span>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="#stats-section" class="active"><span class="icon">&#9632;</span> Dashboard</a>
+                <a href="#submit-section"><span class="icon">&#43;</span> Submit Document</a>
+                <a href="#documents-section"><span class="icon">&#8801;</span> My Documents</a>
+            </nav>
+
+            <button id="logout-btn" class="btn-logout">&#8592; Log Out</button>
+        </aside>
+
+        <div class="main">
+            <header class="topbar">
+                <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+                <div>
+                    <h1>Welcome back, <span id="user-name">...</span></h1>
+                    <div class="welcome-sub">Here's what's happening with your documents</div>
+                </div>
+                <div class="topbar-right">
+                    <span class="role-badge">Employee</span>
+                </div>
+            </header>
+
+            <main class="content">
+
+                <section id="stats-section" class="stats-grid">
+                    <div class="stat-card accent-primary">
+                        <div class="stat-label">Total Documents</div>
+                        <div class="stat-value" id="stat-total">0</div>
+                    </div>
+                    <div class="stat-card accent-warning">
+                        <div class="stat-label">Pending Review</div>
+                        <div class="stat-value" id="stat-pending">0</div>
+                    </div>
+                    <div class="stat-card accent-success">
+                        <div class="stat-label">Approved</div>
+                        <div class="stat-value" id="stat-approved">0</div>
+                    </div>
+                    <div class="stat-card accent-danger">
+                        <div class="stat-label">Rejected</div>
+                        <div class="stat-value" id="stat-rejected">0</div>
+                    </div>
+                </section>
+
+                <section id="submit-section" class="card">
+                    <h2>Submit a New Document</h2>
+
+                    <div id="success-message" class="success-message"></div>
+                    <div id="error-message" class="error-message"></div>
+
+                    <form id="submit-form">
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" id="title" name="title" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea id="description" name="description" rows="3"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="attachment">Attachment (optional - pdf, doc, docx, jpg, png, max 5MB)</label>
+                            <input type="file" id="attachment" name="attachment">
+                        </div>
+
+                        <button type="submit" class="btn-primary">Submit Document</button>
+                    </form>
+                </section>
+
+                <section id="documents-section" class="card">
+                    <h2>My Documents</h2>
+                    <div id="documents-body" class="documents-list">
+                        <p class="empty-state">Loading...</p>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <div id="history-modal" class="modal-overlay">
+        <div class="modal-box">
+            <button id="modal-close" class="modal-close">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="js/employee-dashboard.js"></script>
+</body>
+</html>
