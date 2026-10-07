@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FlowSpherePro - Login</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="login-page">
+
+    <div class="login-card">
+        <div class="login-logo">FSP</div>
+        <h1>FlowSpherePro</h1>
+        <p class="subtitle">Enterprise Workflow Management System</p>
+
+        <div id="error-message" class="error-message"></div>
+
+        <form id="login-form">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+            </div>
+
+            <button type="submit" class="btn-primary">Log In</button>
+        </form>
+
+        <div class="demo-users">
+            Demo accounts (password: <strong>password123</strong>)<br>
+            employee@flowsphere.com<br>
+            manager@flowsphere.com<br>
+            hr@flowsphere.com<br>
+            director@flowsphere.com
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
