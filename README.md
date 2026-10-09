@@ -69,3 +69,21 @@ A document passes through three levels of review:
 ┌─────────────┐ ┌─────────────┐
 │  COMPLETED  │ │  REJECTED   │
 └─────────────┘ └─────────────┘
+
+---
+
+Workflow Rules
+1. An employee submits a document.
+2. The document starts with pending_manager.
+3. The Manager reviews the document:
+   - ✅ Approve → pending_hr
+   - ❌ Reject → rejected
+4. HR reviews the document:
+   - ✅ Approve → pending_director
+   - ❌ Reject → rejected
+5. The Director performs the final review:
+   - ✅ Approve → approved
+   - ❌ Reject → rejected
+6. Every approval or rejection is recorded in the workflow_history table.
+7. A rejection requires a comment explaining the reason.
+8. Once a document is rejected or approved, it cannot be processed again.
