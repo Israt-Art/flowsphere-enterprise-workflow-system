@@ -70,7 +70,7 @@ A document passes through three levels of review:
 │  COMPLETED  │ │  REJECTED   │
 └─────────────┘ └─────────────┘
 
-
+```text
 
 Workflow Rules
 1. An employee submits a document.
