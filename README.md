@@ -106,6 +106,4 @@ A document passes through three levels of review:
 - View complete workflow history
 - Final approve or reject (comment required for rejection)
 
-**Approval Flow:** Employee → Manager → HR → Director
-6. **Rejection:** A reason must be provided.
-7. **Final Status:** Approved or rejected documents cannot be processed again.
+
