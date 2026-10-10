@@ -79,5 +79,33 @@ A document passes through three levels of review:
 3. **HR Review:** Approve → `pending_director` | Reject → `rejected`.
 4. **Director Review:** Approve → `approved` | Reject → `rejected`.
 5. **History:** Every decision is recorded in `workflow_history`.
+
+
+## 👥 User Roles & Permissions
+
+### 👨‍💼 Employee
+- Login / Logout
+- Submit documents with title, description & optional attachment
+- View submitted documents and track status
+- View complete workflow history
+
+### 👔 Manager
+- View and review pending documents
+- Download attachments
+- Approve or reject (comment required for rejection)
+
+### 🧑‍💼 HR
+- Review documents approved by Manager
+- Download attachments
+- View Manager's approval details
+- Approve or reject (comment required for rejection)
+
+### 👨‍💼 Director
+- Review documents pending final approval
+- Download attachments
+- View complete workflow history
+- Final approve or reject (comment required for rejection)
+
+**Approval Flow:** Employee → Manager → HR → Director
 6. **Rejection:** A reason must be provided.
 7. **Final Status:** Approved or rejected documents cannot be processed again.
