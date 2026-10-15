@@ -107,3 +107,28 @@ A document passes through three levels of review:
 - Final approve or reject (comment required for rejection)
 
 
+
+  ## 🛠️ Technology Stack
+
+| Layer | Technology |
+|---|---|
+| 🎨 Frontend | HTML5, CSS3, Vanilla JavaScript |
+| ⚙️ Backend | PHP |
+| 🗄️ Database | MySQL |
+| 🔗 API Communication | Fetch API |
+| 🔐 Authentication | PHP Native Sessions |
+| 🖥️ Web Server | Apache |
+| 🧪 Local Environment | XAMPP |
+
+---
+
+## 🏗️ Development Approach
+
+- No frontend framework
+- No backend framework
+- No build tools
+- No package manager
+
+The application uses simple and readable technologies so that the complete request, authentication, database, and workflow logic can be understood directly from the source code.
+
+
