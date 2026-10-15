@@ -108,7 +108,9 @@ A document passes through three levels of review:
 
 
 
-  ## 🛠️ Technology Stack
+
+
+## 🛠️ Technology Stack
 
 | Layer | Technology |
 |---|---|
