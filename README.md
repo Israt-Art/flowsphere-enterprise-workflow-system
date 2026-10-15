@@ -12,23 +12,20 @@ The system manages the complete document approval process from **Employee → Ma
 
 ## ✨ Key Features
 
-- 🔐 Secure login and logout
+- 🔐 Login and logout
 - 👥 Role-based access control
-- 📄 Document submission
-- 📎 Optional file attachment
+- 📄 Document submission with optional file attachments
 - 📋 Document status tracking
 - 🔄 Multi-level approval workflow
-- ✅ Approve / ❌ Reject functionality
-- 💬 Required comments for rejection
-- 📝 Complete workflow history
-- 📥 Secure document downloading
-- 🔒 Password hashing using bcrypt
+- ✅ Document approval and rejection
+- 💬 Mandatory comments for rejection
+- 📝 Workflow history tracking
+- 📥 Secure document downloads
+- 🔒 Bcrypt password hashing
 - 🛡️ Prepared SQL statements
-- 📦 File upload validation
-- 🚫 Upload directory script protection
+- 📦 File upload validation and script execution protection
 - 🔄 Session ID regeneration after login
 - ⚡ Conditional workflow updates to prevent duplicate processing
-
 ---
 
 # 🔄 Workflow
