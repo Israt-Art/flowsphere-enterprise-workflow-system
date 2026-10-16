@@ -134,7 +134,7 @@ The application uses simple and readable technologies so that the complete reque
 ---
 
 ## 📁 Project Structure
-
+```
 
 FlowSpherePro/
 │
@@ -193,6 +193,8 @@ FlowSpherePro/
 │   └── schema.sql
 │
 ├── README.md
+
+```
 ├── TESTING.md
 ├── INTERVIEW_PREP.md
 └── .gitignore
