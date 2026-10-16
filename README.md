@@ -201,3 +201,24 @@ FlowSpherePro/
 ```
 
 
+
+## 🗄️ Database Design
+
+FlowSpherePro uses three main database tables:
+
+### 1. `users`
+- Stores user information and account credentials.
+- Supports four roles: `employee`, `manager`, `hr`, and `director`.
+- Passwords are secured using **bcrypt hashing**.
+
+### 2. `documents`
+- Stores submitted document details, including title, description, file path, and creation time.
+- Tracks the submitting employee and current workflow status.
+- `current_status` serves as the source of truth for the document's current stage.
+
+### 3. `workflow_history`
+- Records every approval and rejection, including action, role, comment, user, and date.
+- Uses an **append-only approach** to preserve previous workflow actions and maintain a complete history.
+
+
+
