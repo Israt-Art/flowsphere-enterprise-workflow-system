@@ -133,7 +133,7 @@ The application uses simple and readable technologies so that the complete reque
 
 ---
 
-📁 Project Structure
+## 📁 Project Structure
 
 
 FlowSpherePro/
