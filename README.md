@@ -131,3 +131,70 @@ A document passes through three levels of review:
 The application uses simple and readable technologies so that the complete request, authentication, database, and workflow logic can be understood directly from the source code.
 
 
+---
+
+📁 Project Structure
+
+
+FlowSpherePro/
+│
+├── frontend/
+│   ├── login.html
+│   ├── employee-dashboard.html
+│   ├── manager-dashboard.html
+│   ├── hr-dashboard.html
+│   ├── director-dashboard.html
+│   │
+│   ├── css/
+│   │   └── style.css
+│   │
+│   └── js/
+│       ├── login.js
+│       ├── employee-dashboard.js
+│       ├── manager-dashboard.js
+│       ├── hr-dashboard.js
+│       └── director-dashboard.js
+│
+├── backend/
+│   ├── api/
+│   │   ├── auth/
+│   │   │   ├── login.php
+│   │   │   ├── logout.php
+│   │   │   └── me.php
+│   │   │
+│   │   ├── documents/
+│   │   │   ├── create.php
+│   │   │   ├── list.php
+│   │   │   ├── get.php
+│   │   │   └── download.php
+│   │   │
+│   │   └── workflow/
+│   │       ├── manager_pending.php
+│   │       ├── manager_approve.php
+│   │       ├── manager_reject.php
+│   │       ├── hr_pending.php
+│   │       ├── hr_approve.php
+│   │       ├── hr_reject.php
+│   │       ├── director_pending.php
+│   │       ├── director_approve.php
+│   │       └── director_reject.php
+│   │
+│   ├── config/
+│   │   └── database.php
+│   │
+│   ├── includes/
+│   │   └── auth.php
+│   │
+│   └── uploads/
+│       ├── .htaccess
+│       └── uploaded files
+│
+├── database/
+│   └── schema.sql
+│
+├── README.md
+├── TESTING.md
+├── INTERVIEW_PREP.md
+└── .gitignore
+
+
