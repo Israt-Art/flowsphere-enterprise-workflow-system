@@ -222,3 +222,8 @@ FlowSpherePro uses three main database tables:
 
 
 
+---
+
+## 🔐 Authentication & Authorization
+FlowSpherePro uses PHP native sessions for authentication.
+### Login Process
