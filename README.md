@@ -225,31 +225,39 @@ FlowSpherePro uses three main database tables:
 ---
 
 
-## 🔐 Authentication & Authorization
 
-FlowSpherePro uses PHP native sessions to manage user authentication and maintain secure access to the application.
+# 🔐 Authentication & Authorization
 
-### 🔑 Login Process
+FlowSpherePro uses PHP native sessions for authentication and role-based access control.
 
+### Login Process
 ```text
-User enters email and password
-              ↓
-Database user lookup
-              ↓
-Password verification using password_verify()
-              ↓
-Session ID regeneration
-              ↓
-User information stored in $_SESSION
-              ↓
-Dashboard access
+Email + Password
+       ↓
+Database Lookup
+       ↓
+password_verify()
+       ↓
+Session ID Regeneration
+       ↓
+User Data Stored in $_SESSION
+       ↓
+Dashboard Access
 ```
 
-### 🛡️ Security Features
+- `password_hash()` — Secure password hashing using bcrypt.
+- `password_verify()` — Password verification during login.
+- `session_regenerate_id()` — Helps prevent session fixation.
 
-- **Password Hashing:** Uses `password_hash()` to securely hash passwords before storing them in the database.
-- **Password Verification:** Uses `password_verify()` to validate user credentials during login.
-- **Session Management:** Uses PHP native sessions to maintain the authenticated user's state.
-- **Session Fixation Protection:** Regenerates the session ID after successful login using `session_regenerate_id()`.
+---
 
-These mechanisms help protect user credentials and manage authenticated access throughout the application.
+# 🛡️ Security
+
+### ✅ Implemented Measures
+
+- **Password Security:** Password hashing and verification.
+- **SQL Injection Protection:** Prepared statements using `mysqli`.
+- **Role-Based Authorization:** `require_login()` and `require_role(['employee'])`.
+- **File Upload Protection:** Extension allow-list, file size limits, and server-side validation.
+- **Generated Filenames:** Unique filenames for uploaded files.
+- **Upload Directory Protection:** `backend/uploads/.htaccess` restricts server-side script execution.
