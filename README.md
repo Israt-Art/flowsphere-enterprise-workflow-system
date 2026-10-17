@@ -224,6 +224,32 @@ FlowSpherePro uses three main database tables:
 
 ---
 
+
 ## 🔐 Authentication & Authorization
-FlowSpherePro uses PHP native sessions for authentication.
-### Login Process
+
+FlowSpherePro uses PHP native sessions to manage user authentication and maintain secure access to the application.
+
+### 🔑 Login Process
+
+```text
+User enters email and password
+              ↓
+Database user lookup
+              ↓
+Password verification using password_verify()
+              ↓
+Session ID regeneration
+              ↓
+User information stored in $_SESSION
+              ↓
+Dashboard access
+```
+
+### 🛡️ Security Features
+
+- **Password Hashing:** Uses `password_hash()` to securely hash passwords before storing them in the database.
+- **Password Verification:** Uses `password_verify()` to validate user credentials during login.
+- **Session Management:** Uses PHP native sessions to maintain the authenticated user's state.
+- **Session Fixation Protection:** Regenerates the session ID after successful login using `session_regenerate_id()`.
+
+These mechanisms help protect user credentials and manage authenticated access throughout the application.
