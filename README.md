@@ -276,6 +276,6 @@ UPDATE documents
 SET current_status = 'pending_hr'
 WHERE id = ?
 AND current_status = 'pending_manager';
-
+```
 
 This prevents duplicate processing from multiple users, browser tabs, or repeated requests. The same approach is used for HR and Director approvals.
