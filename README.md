@@ -279,3 +279,26 @@ AND current_status = 'pending_manager';
 ```
 
 This prevents duplicate processing from multiple users, browser tabs, or repeated requests. The same approach is used for HR and Director approvals.
+
+
+---
+
+
+
+# 📄 Document Management
+
+Employees can submit:
+
+- Title
+- Description
+- Optional attachment
+
+The document is stored in the database with:
+
+```sql
+current_status = 'pending_manager'
+```
+
+Managers, HR, and Directors can download attachments when reviewing documents.
+
+Employees can only access documents they submitted themselves.
