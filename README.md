@@ -261,3 +261,21 @@ Dashboard Access
 - **File Upload Protection:** Extension allow-list, file size limits, and server-side validation.
 - **Generated Filenames:** Unique filenames for uploaded files.
 - **Upload Directory Protection:** `backend/uploads/.htaccess` restricts server-side script execution.
+
+
+---
+
+## ⚡ Workflow Concurrency Protection
+
+Each workflow action uses conditional database updates to prevent duplicate processing.
+
+For example, manager approval only succeeds when the document status is `pending_manager`.
+
+```sql
+UPDATE documents
+SET current_status = 'pending_hr'
+WHERE id = ?
+AND current_status = 'pending_manager';
+
+
+This prevents duplicate processing from multiple users, browser tabs, or repeated requests. The same approach is used for HR and Director approvals.
