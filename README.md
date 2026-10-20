@@ -298,7 +298,7 @@ The document is stored in the database with:
 ```sql
 current_status = 'pending_manager'
 
-
+```
 
 
 
@@ -332,6 +332,7 @@ Director
           │
           ▼
        Completed
+
 ```
 
 The workflow history records:
