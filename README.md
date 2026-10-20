@@ -300,6 +300,9 @@ current_status = 'pending_manager'
 
 ```
 
+Managers, HR, and Directors can download attachments when reviewing documents.
+
+Employees can only access documents they submitted themselves.
 
 
 ---
@@ -345,6 +348,4 @@ The workflow history records:
 
 ```
 
-Managers, HR, and Directors can download attachments when reviewing documents.
 
-Employees can only access documents they submitted themselves.
