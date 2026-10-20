@@ -297,6 +297,51 @@ The document is stored in the database with:
 
 ```sql
 current_status = 'pending_manager'
+
+
+
+
+
+---
+
+## 🔄 Workflow History
+
+Every workflow action is recorded to maintain a complete history of the document approval process.
+
+**Example Workflow:**
+
+```text
+Employee
+   │
+   └── Submitted Document
+          │
+          ▼
+Manager
+   │
+   └── Approved
+          │
+          ▼
+HR
+   │
+   └── Approved
+          │
+          ▼
+Director
+   │
+   └── Approved
+          │
+          ▼
+       Completed
+```
+
+The workflow history records:
+
+- Who performed the action
+- The user's role
+- The action performed
+- Any comments provided
+- The date and time of the action
+
 ```
 
 Managers, HR, and Directors can download attachments when reviewing documents.
