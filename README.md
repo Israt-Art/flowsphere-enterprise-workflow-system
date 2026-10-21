@@ -346,6 +346,90 @@ The workflow history records:
 - Any comments provided
 - The date and time of the action
 
+---
 
 
+# 🚀 Local Installation
+
+### 1. Install XAMPP
+
+Install XAMPP with Apache, MySQL, and PHP.
+
+### 2. Copy the Project
+
+Copy the project folder into:
+
+```text
+C:\xampp\htdocs\
+```
+
+Final location:
+
+```text
+C:\xampp\htdocs\FlowSpherePro
+```
+
+### 3. Start XAMPP
+
+Open the XAMPP Control Panel and start:
+
+- Apache
+- MySQL
+
+### 4. Create the Database
+
+Open phpMyAdmin:
+
+```text
+http://localhost/phpmyadmin
+```
+
+Import the SQL file:
+
+```text
+database/schema.sql
+```
+
+Alternatively, run:
+
+```bash
+mysql -u root -p < database/schema.sql
+```
+
+The schema also seeds four demo user accounts.
+
+### 5. Configure Database Connection
+
+Open:
+
+```text
+backend/config/database.php
+```
+
+Update the database credentials if your local MySQL configuration differs.
+
+### 6. Open the Application
+
+Open the following URL in your browser:
+
+```text
+http://localhost/FlowSpherePro/frontend/login.html
+```
+
+---
+
+# 🔑 Demo Login Credentials
+
+All demo accounts use the following password:
+
+```text
+password123
+```
+
+| Role | Email |
+|---|---|
+| 👨‍💼 Employee | `employee@flowsphere.com` |
+| 👔 Manager | `manager@flowsphere.com` |
+| 🧑‍💼 HR | `hr@flowsphere.com` |
+| 👨‍💼 Director | `director@flowsphere.com` |
 
