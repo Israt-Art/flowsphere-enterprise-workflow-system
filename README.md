@@ -479,3 +479,20 @@ The testing checklist covers:
 - Verify users cannot access other employees' documents
 
 
+---
+
+# ⚠️ Current Limitations
+
+FlowSpherePro is a learning and portfolio project, not a production-ready enterprise system.
+
+The following features are not yet implemented:
+
+- CSRF protection
+- Login rate limiting
+- Password reset functionality
+- Email notifications
+- Production HTTPS configuration
+- Production secure cookie configuration
+
+These features can be considered future improvements.
+
