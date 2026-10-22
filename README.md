@@ -433,3 +433,49 @@ password123
 | 🧑‍💼 HR | `hr@flowsphere.com` |
 | 👨‍💼 Director | `director@flowsphere.com` |
 
+
+
+---
+
+# 🧪 Testing
+
+Manual testing instructions are available in [`TESTING.md`](TESTING.md).
+
+The testing checklist covers:
+
+### 🔐 Authentication
+- Login with valid credentials
+- Login with invalid credentials
+- Logout
+- Session validation
+
+### 👨‍💼 Employee
+- Submit document
+- Submit document with attachment
+- View document list and details
+- View workflow history
+- Download attachment
+
+### 👔 Manager
+- View pending documents
+- Approve or reject documents
+- Reject without a comment
+- Download attachment
+
+### 🧑‍💼 HR
+- View pending documents
+- Review manager actions
+- Approve or reject documents
+
+### 👨‍💼 Director
+- View pending documents
+- View complete workflow history
+- Approve or reject documents
+
+### 🛡️ Authorization
+- Verify employees cannot access manager functions
+- Verify managers cannot access HR functions
+- Verify HR cannot access Director functions
+- Verify users cannot access other employees' documents
+
+
