@@ -1,4 +1,4 @@
-# 🚀 FlowSpherePro
+           Q2344A# 🚀 FlowSpherePro
 
 ## Enterprise Workflow Management System
 
@@ -531,4 +531,18 @@ screenshots/
 ├── director-dashboard.png
 └── workflow-history.png
 ```
+
+
+
+---
+
+# 📚 Project Documentation
+
+| File | Description |
+|---|---|
+| 📖 `README.md` | Project overview and setup instructions |
+| 🧪 `TESTING.md` | Manual testing checklist |
+| 🎤 `INTERVIEW_PREP.md` | Architecture overview and interview preparation |
+| 🗄️ `database/schema.sql` | Database schema and demo data |
+
 
