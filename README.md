@@ -514,3 +514,21 @@ These features can be considered future improvements.
 - Production HTTPS configuration
 - Administrative user management
 
+
+
+---
+
+# 📸 Screenshots
+
+The following screenshots showcase the application's interface and workflow:
+
+```text
+screenshots/
+├── login.png
+├── employee-dashboard.png
+├── manager-dashboard.png
+├── hr-dashboard.png
+├── director-dashboard.png
+└── workflow-history.png
+```
+
