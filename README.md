@@ -546,3 +546,23 @@ screenshots/
 | 🗄️ `database/schema.sql` | Database schema and demo data |
 
 
+
+---
+
+# 🎯 Project Objective
+
+FlowSpherePro demonstrates a role-based document workflow system using a simple web technology stack.
+
+The project covers:
+
+- Authentication and authorization
+- Session management
+- Database operations
+- Prepared SQL statements
+- File uploads
+- Role-based approval workflow
+- Conditional database updates
+- Workflow history tracking
+- Basic web security
+
+The project avoids frameworks to keep the implementation straightforward and easy to understand.
