@@ -566,3 +566,34 @@ The project covers:
 - Basic web security
 
 The project avoids frameworks to keep the implementation straightforward and easy to understand.
+
+
+
+---
+
+# 🧠 Architecture Overview
+
+```text
+┌────────────────────────────┐
+│          FRONTEND          │
+│  HTML + CSS + JavaScript   │
+└──────────────┬─────────────┘
+               │
+               │ Fetch API
+               ▼
+┌────────────────────────────┐
+│          BACKEND           │
+│          PHP APIs          │
+│ Authentication & Workflow  │
+└──────────────┬─────────────┘
+               │
+               │ mysqli
+               ▼
+┌────────────────────────────┐
+│          DATABASE          │
+│            MySQL           │
+│ users / documents /        │
+│ workflow_history           │
+└────────────────────────────┘
+```
+
