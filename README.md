@@ -597,3 +597,27 @@ The project avoids frameworks to keep the implementation straightforward and eas
 └────────────────────────────┘
 ```
 
+
+
+---
+
+# 🏁 Summary
+
+FlowSpherePro provides a multi-level document approval workflow:
+
+```text
+Employee
+   ↓
+Manager
+   ↓
+HR
+   ↓
+Director
+   ↓
+Completed
+```
+
+Documents can also be rejected at any review stage.
+
+Every workflow action is recorded in the audit history. Authentication, authorization, database security, and file-upload protections are handled on the backend.
+
