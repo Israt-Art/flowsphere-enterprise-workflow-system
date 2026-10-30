@@ -621,3 +621,16 @@ Documents can also be rejected at any review stage.
 
 Every workflow action is recorded in the audit history. Authentication, authorization, database security, and file-upload protections are handled on the backend.
 
+
+
+---
+
+## ⭐ FlowSpherePro
+
+**A Role-Based Document Approval System**
+
+Developed using HTML5, CSS3, Vanilla JavaScript, PHP, and MySQL.
+
+> Bringing document submission, approval, and tracking together in one workflow.
+
+
