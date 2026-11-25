@@ -195,7 +195,7 @@ FlowSpherePro/
 ├── README.md
 
 ├── TESTING.md
-├── INTERVIEW_PREP.md
+├── ARCHITECTURE.md
 └── .gitignore
 
 ```
