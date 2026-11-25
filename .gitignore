@@ -1,0 +1,12 @@
+
+# Uploaded documents shouldn't be committed
+# Only .htaccess and .gitkeep should be tracked
+backend/uploads/*
+!backend/uploads/.htaccess
+!backend/uploads/.gitkeep
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
