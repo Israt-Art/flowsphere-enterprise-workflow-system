@@ -134,7 +134,10 @@ The application uses simple and readable technologies so that the complete reque
 ---
 
 ## 📁 Project Structure
-```
+
+```text
+
+
 
 FlowSpherePro/
 │
@@ -192,13 +195,24 @@ FlowSpherePro/
 ├── database/
 │   └── schema.sql
 │
+├── screenshots/
+│   ├── 01-login.png
+│   ├── 02-document-submission-before.png
+│   ├── 03-document-submission-after.png
+│   ├── 04-workflow-history-before-review.png
+│   ├── 05-manager-approval-success.png
+│   ├── 06-hr-approval-success.png
+│   ├── 07-director-final-approval-success.png
+│   ├── 08-employee-approved-status.png
+│   └── 09-employee-workflow-history-approved.png
+│
 ├── README.md
-
 ├── TESTING.md
 ├── ARCHITECTURE.md
 └── .gitignore
-
 ```
+
+---
 
 
 
@@ -518,18 +532,38 @@ These features can be considered future improvements.
 
 ---
 
+
 # 📸 Screenshots
 
-The following screenshots showcase the application's interface and workflow:
+The following screenshots showcase the application's interface and workflow.
 
-```text
-screenshots/
-├── login.png
-├── employee-dashboard.png
-├── manager-dashboard.png
-├── hr-dashboard.png
-├── director-dashboard.png
-└── workflow-history.png
+### 1. Login Page
+![Login Page](screenshots/01-login.png)
+
+### 2. Employee Dashboard
+![Employee Dashboard](screenshots/02-document-submission-before.png)
+
+### 3. Document Submission
+![Document Submission](screenshots/03-document-submission-after.png)
+
+### 4. Workflow History Before Review
+![Workflow History](screenshots/04-workflow-history-before-review.png)
+
+### 5. Manager Approval
+![Manager Approval](screenshots/05-manager-approval-success.png)
+
+### 6. HR Approval
+![HR Approval](screenshots/06-hr-approval-success.png)
+
+### 7. Director Final Approval
+![Director Final Approval](screenshots/07-director-final-approval-success.png)
+
+### 8. Employee Approved Status
+![Employee Approved Status](screenshots/08-employee-approved-status.png)
+
+### 9. Final Workflow History
+![Final Workflow History](screenshots/09-employee-workflow-history-approved.png)
+
 ```
 
 
@@ -542,7 +576,7 @@ screenshots/
 |---|---|
 | 📖 `README.md` | Project overview and setup instructions |
 | 🧪 `TESTING.md` | Manual testing checklist |
-| 🎤 `INTERVIEW_PREP.md` | Architecture overview and interview preparation |
+| 🎤 `ARCHITECTURE.md` | Architecture overview and interview preparation |
 | 🗄️ `database/schema.sql` | Database schema and demo data |
 
 
