@@ -581,9 +581,23 @@ The following screenshots showcase the application's interface and workflow.
 
 
 
+
 ---
 
-# 🎯 Project Objective
+## 📚 Project Documentation
+
+The project includes the following documentation files:
+
+| File | Description |
+|---|---|
+| 📖 `README.md` | Project overview and setup instructions |
+| 🧪 `TESTING.md` | Manual testing checklist |
+| 🏗️ `ARCHITECTURE.md` | System architecture and interview preparation |
+| 🗄️ `database/schema.sql` | Database schema and demo data |
+
+---
+
+## 🎯 Project Objective
 
 FlowSpherePro demonstrates a role-based document workflow system using a simple web technology stack.
 
@@ -601,15 +615,16 @@ The project covers:
 
 The project avoids frameworks to keep the implementation straightforward and easy to understand.
 
-
-
 ---
 
-# 🧠 Architecture Overview
+## 🧠 Architecture Overview
+
+FlowSpherePro follows a simple three-layer architecture:
 
 ```text
 ┌────────────────────────────┐
 │          FRONTEND          │
+│                            │
 │  HTML + CSS + JavaScript   │
 └──────────────┬─────────────┘
                │
@@ -617,19 +632,31 @@ The project avoids frameworks to keep the implementation straightforward and eas
                ▼
 ┌────────────────────────────┐
 │          BACKEND           │
+│                            │
 │          PHP APIs          │
-│ Authentication & Workflow  │
+│  Authentication & Workflow│
 └──────────────┬─────────────┘
                │
                │ mysqli
                ▼
 ┌────────────────────────────┐
 │          DATABASE          │
+│                            │
 │            MySQL           │
-│ users / documents /        │
-│ workflow_history           │
+│                            │
+│  users / documents /       │
+│  workflow_history          │
 └────────────────────────────┘
 ```
+
+Each layer has a specific responsibility:
+
+- **Frontend:** Displays the interface and handles user interactions.
+- **Backend:** Processes API requests, authentication, authorization, and workflow operations.
+- **Database:** Stores user information, submitted documents, and workflow history.
+
+---
+
 
 
 
